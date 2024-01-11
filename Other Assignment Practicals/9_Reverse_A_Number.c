@@ -1,5 +1,5 @@
 /*
-5. WAP to print sum of digits of a given number (i.e. 123 = 1 + 2 + 3 = 6 )*
+9. WAP to reverse the given number (i.e. 123 = 321 ).***
 Author: Mehdiali Kadiwala
 */
 
@@ -8,7 +8,7 @@ Author: Mehdiali Kadiwala
 
 void main()
 {
-    int number, r, sum = 0;
+    int number, reverse = 0, r;
 
     printf("Enter the number = ");
     scanf("%d", &number);
@@ -16,11 +16,11 @@ void main()
     while (number > 0)
     {
         r = number % 10;
-        sum = sum + r;
+        reverse = (reverse * 10) + r;
         number = number / 10;
     }
 
-    printf("\nSum = %d", sum);
+    printf("\nReverse Number = %d", reverse);
 
     getch();
 }
